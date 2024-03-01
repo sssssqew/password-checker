@@ -1,0 +1,30 @@
+body{
+  margin: 0; padding: 0;
+}
+main{
+  /* border: 1px solid red; */
+  display: flex;
+  height: 100vh;
+  overflow: hidden;
+  /* margin-left: -50vw; */
+  transition: 1s ease-in-out;
+}
+main section{
+  /* border: 1px solid green; */
+  width: 100vw;
+  flex: none;
+  color: #fff;
+  position: relative;
+}
+main section:nth-child(1){
+  background-color: brown;
+}
+main section:nth-child(2){
+  background-color: yellowgreen;
+}
+main section span{
+  position: absolute;
+  right: 1rem; top: 1rem;
+  font-size: 3rem;
+  cursor: pointer;
+}
