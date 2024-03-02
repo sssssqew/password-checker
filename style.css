@@ -1,33 +1,40 @@
 body{
   margin: 0; padding: 0;
-  background-color: #0e1111;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  box-sizing: border-box;
   overflow: hidden;
 }
-body pre{
-  color: green;
-  font-size: 1.2rem;
+main{
+  width: 100vw; height: 100vh;
+  transition: 1s ease-in-out;
+  display: flex;
+  justify-content: flex-start;
 }
-.letter{
-  position: absolute;
-  top: 0;
-  color: green;
-  transition: 20ms ease-in-out;
-  animation: zoom 1s ease-in-out forwards;
+main section{
+  width: 100%; height: 100%;
+  flex: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-@keyframes zoom{
-  0%{
-    transform: scale(1);
-    opacity: 1;
-  }
-  50%{
-    transform: scale(1.3);
-    opacity: 0.3;
-  }
-  100%{
-    transform: scale(1);
-    opacity: 0.1;
-  }
+main section p{
+  font-size: 2rem;
+  font-weight: bold;
+  color: seashell;
+  text-align: center;
+  margin: 0; padding: 1rem 2rem;
+}
+main section:nth-child(1){
+  background-color: yellowgreen;
+}
+main section:nth-child(2){
+  background-color: brown;
+}
+main section:nth-child(3){
+  background-color: yellow;
+}
+main section:nth-child(4){
+  background-color: springgreen;
+}
+main section:nth-child(5){
+  background-color: slateblue;
 }
