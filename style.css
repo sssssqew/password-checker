@@ -1,58 +1,10 @@
-body{
-  margin: 0; padding: 0;
-  box-sizing: border-box;
-  background-color: #0e1111;
+.progress{
+  width: 600px;
+  height: 50px;
+  border: 2px solid #0e1111;
+  margin: 2rem;
 }
-main{
-  width: 100vw; height: 100vh;
-  display: flex;
-  justify-content: center;
-  overflow: hidden;
-}
-main section{
-  width: 25%;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 1s ease-in-out;
-}
-main section p{
-  font-size: 2rem;
-  font-weight: bold;
-  color: seashell;
-  text-align: center;
-  margin: 0; padding: 1rem 2rem;
-  /* border: 1px solid red; */
-}
-main section:nth-child(1){
-  background-color: yellowgreen;
-}
-main section:nth-child(2){
-  background-color: brown;
-}
-main section:nth-child(3){
-  background-color: yellow;
-}
-main section:nth-child(4){
-  background-color: springgreen;
-}
-main section:nth-child(2n+1){
-  transform: translateY(-100vh);
-}
-main section:nth-child(2n){
-  transform: translateY(100vh);
-}
-.text{
-  position: absolute;
-  left: 50%; top: 50%;
-  transform: translate(-50%, -50%);
-  color: yellowgreen; font-size: 5rem;
-  /* border: 1px solid red; */
-}
-main section.show{
-  transform: translateY(0);
-}
-.expand{
-  width: 100%;
+.progress-bar{
+  width: 0;
+  height: 100%;
 }
